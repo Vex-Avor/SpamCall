@@ -93,7 +93,7 @@ Completed!
     }
     public function run() {
         while (true) {
-            echo "\e[97m[?] Start Spam [?] (y)[+]=> \e[92m ";
+            echo "\e[97m[?] Start Spam [?] (y)=> \e[92m ";
             $loop = $this->get();
             if ($loop == "y") {
                     $this->ekse();
