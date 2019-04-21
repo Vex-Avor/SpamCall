@@ -93,13 +93,16 @@ Completed!
     }
     public function run() {
         while (true) {
-            echo "\e[97m[?] Start Spam [?] (y)[+]=> \e[92m ";
+            echo "\e[97m[?] Start Spam [?] (y) => \e[92m ";
             $loop = $this->get();
             if ($loop == "y" OR $loop == "n") {
-                $this->ekse();
+                    break;
             } else {
                 echo "\e[97mTekan 'y' ^_^ 
-";                
+";
+                continue;
+            } else {
+                               
                 system('clear');
                 echo "\e[92m
 [+]=====================================================[+]\e[92m
@@ -120,7 +123,8 @@ Completed!
 ||    \ \/ /|  _)  )  (  ____ /    \ \ \/ /(  O )|    /  ||\e[92m
 ||     \__/ (____)(_/\_)(____)\_/\_/  \__/  \__/ (_|\_)  ||\e[92m
 [+}=====================================================[+]
-";
+";             
+                $this->ekse(); 
             }
             
         }
